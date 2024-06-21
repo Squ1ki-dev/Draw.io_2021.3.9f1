@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74c8a311019d0984f81bb9e7077ff37c, type: 3}
+  m_Name: PowerUpConfigBase
+  m_EditorClassIdentifier: 
+  m_Duration: 5
+  m_ParticleSystem: {fileID: 198712633327312074, guid: 09b06f073f2e84f06851fbfe15c08749,
+    type: 3}
+  m_IdleParticleSystem: {fileID: 1171349115949328212, guid: 5285b047c21213f43b462981011770ca,
+    type: 3}
+  m_Shadow: {fileID: 100002, guid: 28a5e79925e3ce04a82856c16a572cbe, type: 3}
