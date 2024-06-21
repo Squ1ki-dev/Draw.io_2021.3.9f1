@@ -19,7 +19,7 @@ public static class Constants
 	public const string         c_PlayerXPSave = "XP";
     public const string         c_PlayerLevelSave = "Lvl";
     public const string         c_VibrationSave = "Vibration";
-    public const string         c_SkinScreenToggle = "SkinScreenToggle";
+    public const string         c_SkinSelectorToggle = "SkinSelectorToggle";
     public const string         c_CollisionToggle = "CollisionToggle";
     public const string         c_BoosterToggle = "BoosterToggle";
 

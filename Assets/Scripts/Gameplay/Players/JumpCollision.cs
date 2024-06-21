@@ -8,15 +8,18 @@ public class JumpCollision : MonoBehaviour
     [SerializeField] private float jumpHeight;
     [SerializeField] private float jumpDuration;
 
+    private void Start() => ApplyCollisionSettings();
+
+    private void ApplyCollisionSettings()
+    {
+        if(PlayerPrefs.GetInt(Constants.c_CollisionToggle) == 1)
+            jumpHeight = 0;
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
-        Brush brush = collision.gameObject.GetComponent<Brush>();
-
-        if(GameManager.Instance.m_IsPlaying == true)
-        {
-            if (brush)
-                JumpAnim();
-        }
+        if(GameManager.Instance.m_IsPlaying && collision.gameObject.TryGetComponent(out Brush brush))
+            JumpAnim();
     }
 
     private void JumpAnim()

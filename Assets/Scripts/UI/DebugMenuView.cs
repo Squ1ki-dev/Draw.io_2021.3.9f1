@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class DebugMenuView : View<DebugMenuView>
 {
-    [SerializeField] private Toggle m_SkinScreenToggle, m_PlayerCollisionToggle, m_SpeedBoosterToggle;
+    [SerializeField] private Toggle m_SkinSelectorToggle, m_PlayerCollisionToggle, m_SpeedBoosterToggle;
     [SerializeField] private GameObject BrushSelect, NewSkinButton;
     [SerializeField] private MainMenuView m_MainMenuView;
     private int currentToggleState;
@@ -14,9 +14,13 @@ public class DebugMenuView : View<DebugMenuView>
 
     private void Init()
     {
-        m_SkinScreenToggle.isOn = PlayerPrefs.GetInt(Constants.c_SkinScreenToggle) == 1 ? true : false;
+        m_SkinSelectorToggle.isOn = PlayerPrefs.GetInt(Constants.c_SkinSelectorToggle) == 1 ? true : false;
         m_PlayerCollisionToggle.isOn = PlayerPrefs.GetInt(Constants.c_CollisionToggle) == 1 ? true : false;
         m_SpeedBoosterToggle.isOn = PlayerPrefs.GetInt(Constants.c_BoosterToggle) == 1 ? true : false;
+
+        m_SkinSelectorToggle.onValueChanged.AddListener(OnSkinSelectorToggleChanged);
+        m_PlayerCollisionToggle.onValueChanged.AddListener(OnPlayerCollisionToggleChanged);
+        m_SpeedBoosterToggle.onValueChanged.AddListener(OnSpeedBoosterToggleChanged);
     }
 
     public void OnReturnButton()
@@ -27,33 +31,18 @@ public class DebugMenuView : View<DebugMenuView>
         m_MainMenuView.Transition(true);
     }
 
-    public void OnOldSkinScreen()
+    private void OnSkinSelectorToggleChanged(bool isOn)
     {
-        currentToggleState = m_SkinScreenToggle.isOn == true ? 1 : 0;
-        
-        if(currentToggleState == 1)
-        {
-            BrushSelect.SetActive(true);
-            NewSkinButton.SetActive(false);
-        }
-        else
-        {
-            BrushSelect.SetActive(false);
-            NewSkinButton.SetActive(true);
-        }
-
-        PlayerPrefs.SetInt(Constants.c_SkinScreenToggle, currentToggleState);
+        BrushSelect.SetActive(isOn);
+        NewSkinButton.SetActive(!isOn);
+        PlayerPrefs.SetInt(Constants.c_SkinSelectorToggle, isOn ? 1 : 0);
     }
 
-    public void OnPlayerCollision()
-    {
-        currentToggleState = m_PlayerCollisionToggle.isOn == true ? 1 : 0;
-        PlayerPrefs.SetInt(Constants.c_CollisionToggle, currentToggleState);
-    }
+    private void OnPlayerCollisionToggleChanged(bool isOn) => PlayerPrefs.SetInt(Constants.c_CollisionToggle, isOn ? 1 : 0);
 
-    public void OnSpeedBooster()
+    private void OnSpeedBoosterToggleChanged(bool isOn)
     {
-        currentToggleState = m_SpeedBoosterToggle.isOn == true ? 1 : 0;
-        PlayerPrefs.SetInt(Constants.c_BoosterToggle, currentToggleState);
+        PlayerPrefs.SetInt(Constants.c_BoosterToggle, isOn ? 1 : 0);
+        GameManager.Instance.InitPowerUps();
     }
 }

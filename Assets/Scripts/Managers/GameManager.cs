@@ -73,7 +73,7 @@ public class GameManager : SingletonMB<GameManager>
     public List<SkinData> m_Skins;
     private List<Color> m_Colors;
     private List<Vector3> m_PopPoints;
-    private List<PowerUpData> m_PowerUps;
+    public List<PowerUpData> m_PowerUps;
     private PlayerNameData m_PlayerNameData;
     private List<GameObject> m_Objects; // Powerups and other map objects
     private List<Player> m_OrderedPlayers;
@@ -129,7 +129,7 @@ public class GameManager : SingletonMB<GameManager>
             new Vector3 (halfWidth - c_PopPointPadding - c_PopPointTeamPadding, 0.0f, halfHeight - c_PopPointPadding + c_PopPointTeamPadding),
         };
 
-        m_PowerUps = new List<PowerUpData>(Resources.LoadAll<PowerUpData>("PowerUps"));
+        InitPowerUps();
     }
 
     void Start()
@@ -143,6 +143,14 @@ public class GameManager : SingletonMB<GameManager>
     public List<Color> GetColors()
     {
         return (m_Colors);
+    }
+
+    public void InitPowerUps()
+    {
+        m_PowerUps = new List<PowerUpData>(Resources.LoadAll<PowerUpData>("PowerUps"));
+
+        if(PlayerPrefs.GetInt(Constants.c_BoosterToggle) == 1)
+            m_PowerUps.RemoveAt(m_PowerUps.Count - 1);
     }
 
     public void SetColor(int colorIndex)

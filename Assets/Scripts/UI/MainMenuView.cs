@@ -16,6 +16,8 @@ public class MainMenuView : View<MainMenuView>
 
     public GameObject m_BrushGroundLight;
     public GameObject m_BrushesPrefab;
+    public GameObject m_NewSelectSkinButton;
+    public GameObject m_OldSelectSkinButton;
     public SelectSkinView m_SelectSkinView;
     public DebugMenuView m_DebugMenuView;
     public int m_IdSkin = 0;
@@ -33,6 +35,16 @@ public class MainMenuView : View<MainMenuView>
 
         m_StatsManager = StatsManager.Instance;
         m_IdSkin = m_StatsManager.FavoriteSkin;
+        
+    }
+
+    private void Start() => LoadSavedSetting();
+
+    private void LoadSavedSetting()
+    {
+        bool isOldSkinScreen = PlayerPrefs.GetInt(Constants.c_SkinSelectorToggle, 0) == 1;
+        m_OldSelectSkinButton.SetActive(isOldSkinScreen);
+        m_NewSelectSkinButton.SetActive(!isOldSkinScreen);
     }
 
     public void OnPlayButton()

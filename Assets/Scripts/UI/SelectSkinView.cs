@@ -5,16 +5,16 @@ using UnityEngine.UI;
 
 public class SelectSkinView : View<SelectSkinView>
 {
-    [SerializeField] private List<Image> m_ColoredImages;
+    private int m_IdSkin = 0;
     [SerializeField] private Transform m_prefabContainer;
     [SerializeField] private SkinUIElement m_skinUIPrefab;
     [SerializeField] private MainMenuView m_MainMenuView;
     [SerializeField] private SkinUIElement m_SelectedBrush;
     private List<SkinUIElement> skinUIElements;
-    private StatsManager m_StatsManager;
-    private int m_IdSkin = 0;
 
-    private void Awake()
+    private StatsManager m_StatsManager;
+
+    protected override void Awake()
     {
         base.Awake();
 
@@ -35,8 +35,7 @@ public class SelectSkinView : View<SelectSkinView>
 
     private void TryInitialize()
     {
-        if (skinUIElements != null)
-            return;
+        if (skinUIElements != null) return;
 
         skinUIElements = new List<SkinUIElement>();
 
@@ -50,22 +49,15 @@ public class SelectSkinView : View<SelectSkinView>
             skinUIElements.Add(prefab);
         }
 
-        var favoriteSkin = GameManager.Instance.m_Skins[m_IdSkin];
-        GameManager.Instance.SetSkin(favoriteSkin);
-        m_SelectedBrush.Setup(favoriteSkin);
+        SaveCurrentSkin();
     }
 
     private void UpdateColors(Color _Color)
     {
         TryInitialize();
-
-        foreach (var image in m_ColoredImages)
-        {
-            image.color = _Color;
-
-            foreach (var skin in skinUIElements)
-                skin.UpdateColor(_Color);
-        }
+        
+        foreach (var skin in skinUIElements)
+            skin.UpdateColor(_Color);
     }
 
     private void OnClickSkin(SkinData selectedSkin)
@@ -73,5 +65,12 @@ public class SelectSkinView : View<SelectSkinView>
         GameManager.Instance.SetSkin(selectedSkin);
         m_SelectedBrush.Setup(selectedSkin);
         m_StatsManager.FavoriteSkin = GameManager.Instance.GetSkinIndex(selectedSkin);
+    }
+
+    private void SaveCurrentSkin()
+    {
+        var favoriteSkin = GameManager.Instance.m_Skins[m_IdSkin];
+        GameManager.Instance.SetSkin(favoriteSkin);
+        m_SelectedBrush.Setup(favoriteSkin);
     }
 }

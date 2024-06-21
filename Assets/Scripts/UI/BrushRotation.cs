@@ -8,16 +8,8 @@ public class BrushRotation : MonoBehaviour
 	private Transform m_Transform;
 	[SerializeField] private float m_rotationDuration;
 
-	private void Awake()
-	{
-		// Cache
-		m_Transform = transform;
-	}
-
-	private void Start()
-	{
-		Rotation();
-	}
+	private void Awake() => m_Transform = transform;
+	private void Start() => Rotation();
 
 	private void Rotation()
 	{

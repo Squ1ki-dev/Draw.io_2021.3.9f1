@@ -11,12 +11,16 @@ public class SkinUIElement : MonoBehaviour
     [SerializeField] RawImage m_RawImage;
     [SerializeField] Image m_ButtonImage;
     [SerializeField] BrushMainMenu m_Brush;
-
-    private RenderTexture m_renderTexture;
-    private HandleOnClickSkin m_onClickSkin;
+    
     private SkinData m_skinData;
+    private RenderTexture m_renderTexture;
 
     private void Awake()
+    {
+        InitRenderTexture();
+    }
+
+    private void InitRenderTexture()
     {
         m_renderTexture = new RenderTexture(256, 256, 16,  RenderTextureFormat.ARGB32);
         m_renderTexture.Create();
@@ -28,7 +32,7 @@ public class SkinUIElement : MonoBehaviour
 
     public void Setup(SkinData _SkinData, HandleOnClickSkin _OnClickSkin = null)
     {
-        this.m_onClickSkin = _OnClickSkin;
+        this.OnClickSkin = _OnClickSkin;
         this.m_skinData = _SkinData;
 
         SetupSkin();
@@ -36,7 +40,7 @@ public class SkinUIElement : MonoBehaviour
 
     public void UpdateColor(Color _UpdateColor) => m_ButtonImage.color = _UpdateColor;
 
-    public void OnClick() => m_onClickSkin?.Invoke(m_skinData);
+    public void OnClick() => OnClickSkin?.Invoke(m_skinData);
 
     private void SetupSkin() => m_Brush.Set(m_skinData);
 }
