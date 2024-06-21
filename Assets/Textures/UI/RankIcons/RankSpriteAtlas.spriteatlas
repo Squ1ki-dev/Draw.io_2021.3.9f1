@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: RankSpriteAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 1024
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 8
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 0
+      enableAlphaDilation: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 81616d9906559e64caaec017130c888e, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 6e1dab71b3bcd4d049cb99393a197a92, type: 3}
+  - {fileID: 21300000, guid: ca725d91c59824620a611f5c03d4dfda, type: 3}
+  - {fileID: 21300000, guid: 10fb9f7265ef2465aac909f8fe8c3630, type: 3}
+  - {fileID: 21300000, guid: 39123213132b848eca60b05f10508b10, type: 3}
+  - {fileID: 21300000, guid: 2950ec133cd6b402f9b005576aa80086, type: 3}
+  - {fileID: 21300000, guid: c4ec9c23ad977412690663ecd5d69fc7, type: 3}
+  - {fileID: 21300000, guid: 87015e53e42f5419e97b0fd4f12913be, type: 3}
+  - {fileID: 21300000, guid: 5565e90425c7c47bfa80383005191d1b, type: 3}
+  - {fileID: 21300000, guid: c88d8994c59f84e398ce765011e669f4, type: 3}
+  - {fileID: 21300000, guid: a88a8bd48137a4f6a868341f79e6c853, type: 3}
+  - {fileID: 21300000, guid: 5d2febe410b484e168a97835274bbca0, type: 3}
+  - {fileID: 21300000, guid: f6bbe5f6c2cb94f34b960d87e02dae35, type: 3}
+  - {fileID: 21300000, guid: f4544309f17d540e2ae06ac11f87c959, type: 3}
+  - {fileID: 21300000, guid: c14a6e89398fd48c98f8b974e0d77232, type: 3}
+  - {fileID: 21300000, guid: 77a9477a8d33441c5817c8d6ec206018, type: 3}
+  - {fileID: 21300000, guid: db45d29a02388487f9d9a0e0023a4b07, type: 3}
+  - {fileID: 21300000, guid: 9e1a12bb9e3514bc28ccb3c127c63e83, type: 3}
+  - {fileID: 21300000, guid: bd880d3c77afc4c868ef55e5f951d9f2, type: 3}
+  - {fileID: 21300000, guid: b51ff0dcd76c14de79c3b258bd45ccfe, type: 3}
+  - {fileID: 21300000, guid: 18e3d27d2f89f42cebe01d0c5b90d2f0, type: 3}
+  - {fileID: 21300000, guid: 9cd9ee9d97d5e4fe29b0d45dd088e37f, type: 3}
+  - {fileID: 21300000, guid: ad162b5ecca314e04a9cc8a5e147af5f, type: 3}
+  - {fileID: 21300000, guid: 9c13c99ecadd340499f7897dd1d2b451, type: 3}
+  - {fileID: 21300000, guid: bc2510de53c9a4349a117aad35c9698b, type: 3}
+  - {fileID: 21300000, guid: f21b838f355334cf99f51183191c7626, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Voodoo_Draw.io_Elements_Platine2
+  - Voodoo_Draw.io_Elements_Diamond3
+  - Voodoo_Draw.io_Elements_Challenger1
+  - Voodoo_Draw.io_Elements_Diamond2
+  - Voodoo_Draw.io_Elements_Bronze2
+  - Voodoo_Draw.io_Elements_Gold3
+  - Voodoo_Draw.io_Elements_Silver3
+  - Voodoo_Draw.io_Elements_Champion3
+  - Voodoo_Draw.io_Elements_Master
+  - Voodoo_Draw.io_Elements_GrandChampion1
+  - Voodoo_Draw.io_Elements_GrandChampion2
+  - Voodoo_Draw.io_Elements_Platine1
+  - Voodoo_Draw.io_Elements_GrandChampion3
+  - Voodoo_Draw.io_Elements_Challenger2
+  - Voodoo_Draw.io_Elements_Gold2
+  - Voodoo_Draw.io_Elements_Silver1
+  - Voodoo_Draw.io_Elements_Diamond1
+  - Voodoo_Draw.io_Elements_Challenger3
+  - Voodoo_Draw.io_Elements_Champion1
+  - Voodoo_Draw.io_Elements_Gold1
+  - Voodoo_Draw.io_Elements_Champion2
+  - Voodoo_Draw.io_Elements_Bronze1
+  - Voodoo_Draw.io_Elements_Platine3
+  - Voodoo_Draw.io_Elements_Silver2
+  - Voodoo_Draw.io_Elements_Bronze3
+  m_RenderDataMap: {}
+  m_Tag: RankSpriteAtlas
+  m_IsVariant: 0

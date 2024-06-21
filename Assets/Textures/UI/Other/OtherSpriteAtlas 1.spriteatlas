@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: OtherSpriteAtlas 1
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 8
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 0
+      enableAlphaDilation: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: efe558c7f6c50d44b8202737efd9d705, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: f4ae33028ceaf43d1ac28f64ae61ca01, type: 3}
+  - {fileID: 21300000, guid: 42b0c47906ee64bdb9fc5c8f3dbc9eee, type: 3}
+  - {fileID: 21300000, guid: 8ee627aa5dae04af6b565a38f0f93e84, type: 3}
+  - {fileID: 21300000, guid: 153057fd752b248fcadb86d0b67dc4de, type: 3}
+  - {fileID: 21300000, guid: 2482282ef37144356adf7dedae8605ca, type: 3}
+  - {fileID: 21300000, guid: 53c9a16f40c7a4856bf21c233969fc9b, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Cross
+  - Medal
+  - Star
+  - Ratings
+  - Medal_Fabric
+  - Cup_White
+  m_RenderDataMap: {}
+  m_Tag: OtherSpriteAtlas 1
+  m_IsVariant: 0

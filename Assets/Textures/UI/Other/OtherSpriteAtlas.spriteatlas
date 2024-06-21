@@ -1,0 +1,156 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: OtherSpriteAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 0
+      enableAlphaDilation: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 7574547cab00a3f47b71c494d80e4bd0, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: c2b376400977444559cc695a4e2c0887, type: 3}
+  - {fileID: 21300000, guid: e13ed501cefc348b9b2a2481c0300450, type: 3}
+  - {fileID: 21300000, guid: 666ac8318bf3d411cb716d96b116f3a4, type: 3}
+  - {fileID: 21300000, guid: 6a237751d88ec4271a5e79ddc3c9a4d7, type: 3}
+  - {fileID: 21300000, guid: c260d95130fb546c29c4dab92b125740, type: 3}
+  - {fileID: 21300000, guid: 5b438561836944ea29f83456935f355d, type: 3}
+  - {fileID: 21300000, guid: e54a18618436a492e98ae3c75967e3dd, type: 3}
+  - {fileID: 21300000, guid: aaa864b1e199d45ebb9b22918c2cc8b2, type: 3}
+  - {fileID: 21300000, guid: 839121f1741f34ba58d60f4c57dc4afa, type: 3}
+  - {fileID: 21300000, guid: 949991122731443feb2f347638e3a6fd, type: 3}
+  - {fileID: 21300000, guid: 77e911427e6094b588c7a2d34bc71f1c, type: 3}
+  - {fileID: 21300000, guid: 5865fe42b47764931ae8f7be145eb60d, type: 3}
+  - {fileID: 21300000, guid: b438e652210ef45aa8b42495f1d23138, type: 3}
+  - {fileID: 21300000, guid: a8449ed2898d940a790257661a58777d, type: 3}
+  - {fileID: 21300000, guid: 50d03ef20b6aa48b9b29f1cacbb06b96, type: 3}
+  - {fileID: 21300000, guid: c38318030c96043f691f380dc15ceb1c, type: 3}
+  - {fileID: 21300000, guid: 7ed9e9b3d651443a698d1a8d9bd81097, type: 3}
+  - {fileID: 21300000, guid: ca0b240454f7c4df4b960957b3550b9b, type: 3}
+  - {fileID: 21300000, guid: 8d7f658404831451ca605fc34ab1af1e, type: 3}
+  - {fileID: 21300000, guid: c632c99461ad64b87abc3e1ae2b74193, type: 3}
+  - {fileID: 21300000, guid: 3411fcd4b93084154a91dfb812a635c1, type: 3}
+  - {fileID: 21300000, guid: fb7a25150853247f68abe4deddabb3b7, type: 3}
+  - {fileID: 21300000, guid: 306c82257fc104ae0b5dd76a035924f8, type: 3}
+  - {fileID: 21300000, guid: e0d145267a600435697560a41bad4f7b, type: 3}
+  - {fileID: 21300000, guid: c4b1e726e5c9a417a8cf2dab9f5b9e9f, type: 3}
+  - {fileID: 21300000, guid: bb8a7f76a6b7e4b3b8d35e780d47eb9e, type: 3}
+  - {fileID: 21300000, guid: 4de0af76ed14b4aeda1b53fb0374499d, type: 3}
+  - {fileID: 21300000, guid: 5adb38a6498444747b114d46c9a48ed6, type: 3}
+  - {fileID: 21300000, guid: d96bd6f706d624632b75f1db807319a0, type: 3}
+  - {fileID: 21300000, guid: ba9ebd1827e59478980837953b93f051, type: 3}
+  - {fileID: 21300000, guid: cfb07a28b06544807a6df67a9800028b, type: 3}
+  - {fileID: 21300000, guid: 2a786429c593c4147895a264114ad562, type: 3}
+  - {fileID: 21300000, guid: e6e33cb93c91940c4acc0d5c2c069319, type: 3}
+  - {fileID: 21300000, guid: 103b6b4a73ff94f43a383deafa099f2c, type: 3}
+  - {fileID: 21300000, guid: 298eea7a4460a4046af2c324a25e551e, type: 3}
+  - {fileID: 21300000, guid: a2b1f19a17cb04b56a5800337b714f66, type: 3}
+  - {fileID: 21300000, guid: 9887999a9f89e494b9662b0b9760e74a, type: 3}
+  - {fileID: 21300000, guid: cc8955fa34bac46e19786362d01ac6c3, type: 3}
+  - {fileID: 21300000, guid: c61b055b567844fc5b53dcb8349e9245, type: 3}
+  - {fileID: 21300000, guid: 5fb3b39be67cd478592097159a97e928, type: 3}
+  - {fileID: 21300000, guid: b352f80c733654c2d95acb01891f2340, type: 3}
+  - {fileID: 21300000, guid: 9a57234ccee0c462db63dd8f23807893, type: 3}
+  - {fileID: 21300000, guid: 2deabe5c77cbe4446b6823bb0908710f, type: 3}
+  - {fileID: 21300000, guid: ea2b6f5ce07f34a14acd524b7658ba41, type: 3}
+  - {fileID: 21300000, guid: 608d11dc9bbc44966abbe5fed2bee11c, type: 3}
+  - {fileID: 21300000, guid: 09015c1d732ff4ced9c0ce1ce8a0451c, type: 3}
+  - {fileID: 21300000, guid: 9fd5075d850814c2ca4b7194f7f486df, type: 3}
+  - {fileID: 21300000, guid: a1792d5d56f434126a6c291da16ad055, type: 3}
+  - {fileID: 21300000, guid: 935113edcd9a940a5a948a8c8e3ce4b3, type: 3}
+  - {fileID: 21300000, guid: 852d2e3e1bd9145ebb6f94af98ffa6da, type: 3}
+  - {fileID: 21300000, guid: 5239637e54e1c43168537a1058ae3077, type: 3}
+  - {fileID: 21300000, guid: e712d19ef4a51447abbb070ed218ce93, type: 3}
+  - {fileID: 21300000, guid: c08a4c6f182ad4efc8593a006431a53e, type: 3}
+  - {fileID: 21300000, guid: 3d035abf5c6ad47b3904053da93c77fc, type: 3}
+  - {fileID: 21300000, guid: ac1311dfa8da74a5381d6b6c9bfdc312, type: 3}
+  - {fileID: 21300000, guid: 40c7c8ef7819f450284a850d58a7e7a9, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Plan de travail 48@4x
+  - Plan de travail 43@4x
+  - DefeatShinning
+  - Voodoo_Draw.Io_Ui2
+  - PlayRound
+  - Draw.IO_Picto_ProTips_2
+  - VictoryShining
+  - Plan de travail 52@4x
+  - Draw.IO_Picto_Perso_4
+  - Plan de travail 53@4x
+  - CrownEmpty
+  - Plan de travail 39@4x
+  - Cup
+  - Plan de travail 37@4x
+  - Plan de travail 46@4x
+  - Draw.IO_Picto_Action_2
+  - TitleShadow
+  - PlayerArrow
+  - Plan de travail 57@4x
+  - TutoCircle
+  - VictoryShadow
+  - Outline
+  - Fichier 51@4x
+  - Plan de travail 59@4x
+  - Draw.IO_Picto_Action_1
+  - Plan de travail 58@4x
+  - Draw.IO_Picto_ProTips_1
+  - DefeatShadow
+  - Draw.IO_Picto_Perso_3
+  - Voodoo_Draw.Io_Ui1
+  - Skull_Icon
+  - Draw.IO_Picto_Perso_1
+  - Defeat
+  - Voodoo_Draw.io_Elements_remix3_2
+  - Plan de travail 45@4x
+  - Plan de travail 42@4x
+  - Voodoo_Draw.io_Elements_remix3_3
+  - PlayShiningPart
+  - PercentBarIndicator
+  - Draw.IO_Picto_Perso_2
+  - PercentBar
+  - Voodoo_Draw.io_Elements_remix3_1
+  - Title
+  - Skull_Icon_Background
+  - Plan de travail 50@4x
+  - Plan de travail 40@4x
+  - Victory
+  - Draw_BoutonPlay_01
+  - Voodoo_Draw.io_Elements_remix3_4
+  - Crown
+  - Plan de travail 60@4x
+  - PaintDrop
+  - Draw.IO_Picto_Action_3
+  - Draw_BoutonPlay_02
+  - Fichier 53@4x
+  - PercentBarShining
+  m_RenderDataMap: {}
+  m_Tag: OtherSpriteAtlas
+  m_IsVariant: 0

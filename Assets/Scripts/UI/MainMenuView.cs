@@ -55,17 +55,17 @@ public class MainMenuView : View<MainMenuView>
 
     public void OnSelectSkinButton()
     {
-        this.Transition(false);
+        Transition(false);
+        gameObject.SetActive(false);
         m_SelectSkinView.Transition(true);
-        this.gameObject.SetActive(false);
         m_SelectSkinView.gameObject.SetActive(true);
     }
 
     public void OnDebugMenuButton()
     {
-        this.Transition(false);
+        Transition(false);
+        gameObject.SetActive(false);
         m_DebugMenuView.Transition(true);
-        this.gameObject.SetActive(false);
         m_DebugMenuView.gameObject.SetActive(true);
     }
 

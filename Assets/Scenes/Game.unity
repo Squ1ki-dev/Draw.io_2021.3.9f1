@@ -123,6 +123,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!20 &2229408 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 308609074095091512, guid: 94932a9a6b4994343bbb63933e54b852,
+    type: 3}
+  m_PrefabInstance: {fileID: 1527280570}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &35461656
 GameObject:
   m_ObjectHideFlags: 0
@@ -944,9 +950,45 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1393614798}
     m_Modifications:
+    - target: {fileID: 945681627, guid: ade9dc1200e32bb45ad4a7d1f3cda793, type: 3}
+      propertyPath: m_Color.a
+      value: 0.8156863
+      objectReference: {fileID: 0}
     - target: {fileID: 945681628, guid: ade9dc1200e32bb45ad4a7d1f3cda793, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 945681629, guid: ade9dc1200e32bb45ad4a7d1f3cda793, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 140
+      objectReference: {fileID: 0}
+    - target: {fileID: 945681629, guid: ade9dc1200e32bb45ad4a7d1f3cda793, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 140
+      objectReference: {fileID: 0}
+    - target: {fileID: 945681629, guid: ade9dc1200e32bb45ad4a7d1f3cda793, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 60.69995
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013366856, guid: ade9dc1200e32bb45ad4a7d1f3cda793, type: 3}
+      propertyPath: m_text
+      value: DEBUG
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013366856, guid: ade9dc1200e32bb45ad4a7d1f3cda793, type: 3}
+      propertyPath: m_fontSize
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013366856, guid: ade9dc1200e32bb45ad4a7d1f3cda793, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013366856, guid: ade9dc1200e32bb45ad4a7d1f3cda793, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013366856, guid: ade9dc1200e32bb45ad4a7d1f3cda793, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1054396209444862, guid: ade9dc1200e32bb45ad4a7d1f3cda793, type: 3}
       propertyPath: m_IsActive
@@ -2800,6 +2842,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8199738932962425672, guid: 94932a9a6b4994343bbb63933e54b852,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8345062980044755533, guid: 94932a9a6b4994343bbb63933e54b852,
         type: 3}
       propertyPath: m_PreserveAspect
@@ -2820,6 +2867,11 @@ PrefabInstance:
       propertyPath: m_BlocksRaycasts
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8666269679517470389, guid: 94932a9a6b4994343bbb63933e54b852,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 2229408}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94932a9a6b4994343bbb63933e54b852, type: 3}
 --- !u!114 &1652603566 stripped
@@ -3304,6 +3356,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8524636214455214545, guid: 60fd8ee17ca3f684fac7905faf928985,
+        type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8981731213687594836, guid: 60fd8ee17ca3f684fac7905faf928985,
         type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.size
@@ -3347,7 +3404,17 @@ PrefabInstance:
     - target: {fileID: 8981731214454473231, guid: 60fd8ee17ca3f684fac7905faf928985,
         type: 3}
       propertyPath: m_Text
-      value: Disable Old Skin Selector
+      value: Disable New Skin Selector
+      objectReference: {fileID: 0}
+    - target: {fileID: 8981731214454473231, guid: 60fd8ee17ca3f684fac7905faf928985,
+        type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8981731214454473264, guid: 60fd8ee17ca3f684fac7905faf928985,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 27.6
       objectReference: {fileID: 0}
     - target: {fileID: 8981731214954534689, guid: 60fd8ee17ca3f684fac7905faf928985,
         type: 3}

@@ -27,8 +27,8 @@ public class SelectSkinView : View<SelectSkinView>
 
     public void OnReturnButton()
     {
-        this.Transition(false);
-        this.gameObject.SetActive(false);
+        Transition(false);
+        gameObject.SetActive(false);
         m_MainMenuView.gameObject.SetActive(true);
         m_MainMenuView.Transition(true);
     }
