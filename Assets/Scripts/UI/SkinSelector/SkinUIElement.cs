@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Experimental.Rendering;
 
-public class SkinUIElement : MonoBehaviour
+public class SkinUIElement : MonoBehaviour, IBrushElement
 {
     public delegate void HandleOnClickSkin(SkinData skinData);
     public event HandleOnClickSkin OnClickSkin;
@@ -42,5 +42,5 @@ public class SkinUIElement : MonoBehaviour
 
     public void OnClick() => OnClickSkin?.Invoke(m_skinData);
 
-    private void SetupSkin() => m_Brush.Set(m_skinData);
+    public void SetupSkin() => m_Brush.Set(m_skinData);
 }

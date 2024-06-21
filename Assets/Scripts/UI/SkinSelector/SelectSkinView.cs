@@ -9,7 +9,7 @@ public class SelectSkinView : View<SelectSkinView>
     [SerializeField] private Transform m_prefabContainer;
     [SerializeField] private SkinUIElement m_skinUIPrefab;
     [SerializeField] private MainMenuView m_MainMenuView;
-    [SerializeField] private SkinUIElement m_SelectedBrush;
+    [SerializeField] private SkinModelPreview m_SelectedBrush;
     private List<SkinUIElement> skinUIElements;
 
     private StatsManager m_StatsManager;
